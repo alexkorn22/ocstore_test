@@ -16,7 +16,9 @@
         </div>
     </div>
     <div class="container-fluid">
-        Container
+        <?
+            echo 'Content0';
+        ?>
     </div>
 </div>
 <?php echo $footer; ?>

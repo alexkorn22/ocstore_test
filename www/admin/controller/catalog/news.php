@@ -8,6 +8,7 @@
 class ControllerCatalogNews extends Controller {
 
     public function index() {
+
         $this->load->language('catalog/news');
         $this->load->model('catalog/news');
 
@@ -22,8 +23,11 @@ class ControllerCatalogNews extends Controller {
         $this->getList();
     }
 
+
+
     public function getList(){
 
+        $data['news'] = $this->model_catalog_news->getList([]);
         //breadcrumbs
         $data['breadcrumbs'] = array();
         $data['breadcrumbs'][] = array(

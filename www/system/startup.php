@@ -115,7 +115,9 @@ function debug($value, $die = false) {
     $res .= "</div>";
     echo $res;
 }
+require_once $_SERVER['DOCUMENT_ROOT'] . '/rb.php';
 
 function start($application_config) {
+    R::setup( 'mysql:host=localhost;dbname=ocstore_test', 'root', '' );
 	require_once(DIR_SYSTEM . 'framework.php');	
 }
