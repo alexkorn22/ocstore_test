@@ -67,8 +67,8 @@ function modification($filename) {
 }
 
 // Autoloader
-if (is_file(DIR_SYSTEM . '../../vendor/autoload.php')) {
-	require_once(DIR_SYSTEM . '../../vendor/autoload.php');
+if (is_file(DIR_SYSTEM . '../vendor/autoload.php')) {
+	require_once(DIR_SYSTEM . '../vendor/autoload.php');
 }
 
 function library($class) {
@@ -76,10 +76,11 @@ function library($class) {
 
 	if (is_file($file)) {
 		include_once(modification($file));
-
 		return true;
 	} else {
-		return false;
+        //require_once(DIR_SYSTEM . '../vendor/autoload.php');
+		//return ComposerAutoloaderInit8aae768276d979ccfd92e3711f6e1a21::getLoader();
+        return false;
 	}
 }
 

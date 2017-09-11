@@ -1,0 +1,11 @@
+{
+    "require": {
+        "monolog/monolog": "^1.23"
+    },
+    "autoload" :{
+      "psr-4" :{
+          "core\\" : "vendor/ak_oc/core",
+          "app\\" : "vendor/ak_oc/app"
+      }
+    }
+}

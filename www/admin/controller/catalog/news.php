@@ -1,4 +1,5 @@
 <?php
+use Monolog\Logger;
 
 
 /**
@@ -20,6 +21,8 @@ class ControllerCatalogNews extends Controller {
             $this->session->data['success'] = $this->language->get('text_success');
             $data['success'] = $this->session->data['success'] ;
         }
+        $model = new \core\base\Model();
+        debug($model);
         $this->getList();
     }
 

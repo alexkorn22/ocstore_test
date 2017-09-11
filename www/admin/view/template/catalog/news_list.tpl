@@ -1,3 +1,10 @@
+<?
+/**
+ * @var Template $this
+ */
+
+
+?>
 <?php echo $header; ?><?php echo $column_left; ?>
 <div id="content">
     <div class="page-header">
@@ -17,7 +24,8 @@
     </div>
     <div class="container-fluid">
         <?
-            echo 'Content0';
+        echo 'Content0';
+
         ?>
     </div>
 </div>
